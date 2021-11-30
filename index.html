@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Formuláře</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="kontejner">
+
+		<h1>JEŽÍŠKŮV FORMULÁŘ</h1>
+
+		<!--
+		Adresa pro odeslání formuláře:
+		http://formular.itgirls.cz/
+	-->
+		<form action="http://formular.itgirls.cz" method="post" enctype="multipart/form-data">
+
+			<label for="jmeno">Jméno</label> <br>
+			<input type="text" id="jmeno" name="jmeno" value=""> <br>
+			<label for="prijmeni">Prijmeni</label> <br>
+			<input type="text" id="prijmeni" name="prijmeni" value=""> <br>
+			<br>
+
+			<label for="prani">Nejtajnější přání</label> <br>
+			<input type="password" id="prani" name="prani">
+			<br>
+			<br>
+
+			<label for="hodny">Byl/a jsi letos hodný/á?</label> <br>
+			<input type="radio" id="hodnyano" name="hodny" value="hodnyano">
+			<label for="hodnyano"> Ano, byl/a jsem hodný/á</label> <br>
+			<input type="radio" id="zlobivy" name="hodny" value="zlobivy">
+			<label for="zlobivy">Ne, zlobil/a jsem</label> <br>
+			<br>
+			<br>
+
+			<label for="potrebuji">Jaké dárky potřebuji?</label> <br>
+			<input type="checkbox" id="Ponožky" name="potrebuji" value="Ponožky">
+			<label for="Ponožky">Ponožky</label> <br>
+			<input type="checkbox" id="Tričko" name="potrebuji" value="Tričko">
+			<label for="Tričko">Tričko</label> <br>
+			<input type="checkbox" id="Boty" name="potrebuji" value="Boty">
+			<label for="Boty">Boty</label> <br>
+			<input type="checkbox" id="Kosmetiku" name="potrebuji" value="Kosmetiku">
+			<label for="Kosmetiku">Kosmetiku</label> <br>
+			<input type="checkbox" id="Bundu" name="potrebuji" value="Bundu">
+			<label for="Bundu">Bundu</label> <br>
+			<input type="checkbox" id="Hodinky" name="potrebuji" value="Hodinky">
+			<label for="Hodinky">Hodinky</label> <br>
+			<br>
+			<br>
+
+			<label for="pocet">Kolik si přeješ dárků?</label> <br>
+			<input type="range" id="rangeInput" name="rangeInput" min="0" max="10" value="0" oninput="amount.value=rangeInput.value">
+			<output id="amount" name="amount" for="rangeInput">0</output>
+			<br>
+			<br>
+			<br>
+
+			<label for="barva">Jaká je tvá oblíbená barva?</label> <br>
+			<input type="color" id="barva" name="barva">
+			<br>
+			<br>
+
+			<label for="cukrovi">Jaké je tvoje oblíbené cukrovi?</label> <br>
+			<input list="sladke" id="cukrovi" name="cukrovi">
+			<datalist id="sladke">
+				<option value="perníčky">
+				<option value="linecké">
+				<option value="rohlíčky">
+				<option value="marokánky">
+				<option value="medové tlapky">
+				<option value="úlky">
+			</datalist>
+			<br>
+
+			<br>
+			<br>
+			<input type="submit" value="Potvrdit">
+			<input type="reset" value="Resetovat">
+
+
+
+	</div>
+
+
+
+	</form>
+
+
+
+
+
+
+</body>
+
+</html>
